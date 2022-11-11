@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/randomNumber"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@color/design_default_color_primary"
+        android:padding="10dp"
+        android:text="@string/randomNumber"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        app:layout_constraintBottom_toTopOf="@+id/randomNumberPath"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/gButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/randomNumberPath"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@color/design_default_color_primary"
+        android:padding="10dp"
+        android:text="@string/randomNumber"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        app:layout_constraintBottom_toTopOf="@+id/randomNumberInMemory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/gButtonPath"
+        app:layout_constraintTop_toBottomOf="@+id/randomNumber"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/randomNumberInMemory"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@color/design_default_color_primary"
+        android:padding="10dp"
+        android:text="@string/randomNumber"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        app:layout_constraintBottom_toTopOf="@+id/dButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/gButtonInMemory"
+        app:layout_constraintTop_toBottomOf="@+id/randomNumberPath"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/gButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:text="@string/dexGetButton"
+        app:layout_constraintBottom_toTopOf="@+id/gButtonPath"
+        app:layout_constraintEnd_toStartOf="@+id/randomNumber"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/gButtonPath"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:text="@string/pathGetButton"
+        app:layout_constraintBottom_toTopOf="@+id/gButtonInMemory"
+        app:layout_constraintEnd_toStartOf="@+id/randomNumberPath"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gButton"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/gButtonInMemory"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:text="@string/inMemoryGetButton"
+        app:layout_constraintBottom_toTopOf="@+id/dButton"
+        app:layout_constraintEnd_toStartOf="@+id/randomNumberInMemory"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gButtonPath" />
+
+    <Button
+        android:id="@+id/dButton"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:text="@string/download"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

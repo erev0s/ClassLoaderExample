@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">erev0s.com ClassLoader</string>
+    <string name="randomNumber">XXX</string>
+    <string name="dexGetButton">Dex</string>
+    <string name="pathGetButton">Path</string>
+    <string name="inMemoryGetButton">inMem</string>
+    <string name="download">Download</string>
+    <string name="inmemory">InMemory</string>
+</resources>
